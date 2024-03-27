@@ -2,9 +2,9 @@
 
 # Projet Final
 
-Projet final de la formation Data analyst à [JEDHA BOOTCAMP](https://www.jedha.co/formations/data-analysis-fullstack)
+Projet final de la formation Data analyst à [JEDHA BOOTCAMP](https://www.jedha.co/formations/data-analysis-fullstack).
 
-Présentation PPT : Vous pouvez accéder à la présentation [via ce lien](https://www.canva.com/design/DAGAp643_7U/81JnTZ1dDN2NLBIFqvu_mQ/edit?utm_content=DAGAp643_7U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+Présentation (canva) : Vous pouvez accéder à la présentation [via ce lien](https://www.canva.com/design/DAGAp643_7U/81JnTZ1dDN2NLBIFqvu_mQ/edit?utm_content=DAGAp643_7U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
 
 ## Titre du Projet
 
@@ -63,7 +63,7 @@ Pour approfondir notre compréhension des données, nous avons utilisé la plate
 
 ### Visualisations PowerBI
 
-Un tableau de bord interactif construit dans PowerBI, visant à visualiser et analyser l'évolution de la population mondiale au fil des années, avec un focus particulier sur les données par continent. Le tableau de bord est conçu pour offrir une compréhension approfondie des tendances démographiques en relation avec différents indicateurs. [Presentation_demoday_v5_Dimitri_X_Celia.pbix](https://github.com/DimitriKneur/Demoday/blob/main/4_Data_Viz/Presentation_demoday_v5_Dimitri_X_Celia.pbix)
+Un tableau de bord interactif construit dans PowerBI, visant à visualiser et analyser l'évolution de la population mondiale au fil des années, avec un focus particulier sur les données par continent. Le tableau de bord est conçu pour offrir une compréhension approfondie des tendances démographiques en relation avec différents indicateurs. [Visualizations_for_final_presentation.pbix](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/4_Data_Viz/Visualizations_for_final_presentation.pbix)
 
 ### Contenu du Tableau de Bord
 
@@ -84,7 +84,7 @@ Le tableau de bord propose des graphiques spécifiques mettant en évidence le l
 En plus des analyses des données, le tableau de bord inclut des graphiques interactifs visant à fournir des recommandations basées sur les tendances observées. Ces recommandations peuvent aider à orienter les prises de décision et les actions futures.
 
 
-### Comment comprendre le Code
+### Comment Comprendre le Code et les Répertoires
 
 Après toutes les étapes de cleaning et de traitement, les 2 fichiers de données que nous avons utilisé pour faire nos visualisations dans Power BI sont [217_countries_population.csv](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/217_countries_population.csv) et [df_post_cleaning_4_force.csv](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/df_post_cleaning_4_force.csv). Ils ont été obtenus respectivement à l'issue de l'exécution des 2 scripts [217_countries_population.ipynb](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/217_countries_population.ipynb) et [merged_dataset_cleaning.ipynb](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/merged_dataset_cleaning.ipynb).
 
@@ -116,7 +116,12 @@ Nous nous donc retrouvés avec deux fichiers de données finaux, [217_countries_
 
 #### Etape 4 - Visualisation des données sur Power BI, dossier [4_Data_Viz](https://github.com/DimitriKneur/World-Population-Evolution-Project/tree/main/4_Data_Viz)
 
-Dans ce sous-dossier figure
+Dans ce sous-dossier figure un fichier pbix (Power BI) [Visualizations_for_final_presentation.pbix](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/4_Data_Viz/Visualizations_for_final_presentation.pbix) dans lequel figurent de nombreuses visualisations faites en exploitant les 2 fichiers finaux.
+
+
+#### Présentation finale
+
+Nous avons créé une [présentation](https://www.canva.com/design/DAGAp643_7U/81JnTZ1dDN2NLBIFqvu_mQ/edit?utm_content=DAGAp643_7U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) pour synthétiser tout le travail effectué. Dans le dossier [Presentation](https://github.com/DimitriKneur/World-Population-Evolution-Project/tree/main/Presentation), il y a des images, des icônes et différents contenus multimédia que nous avons utilisés pour alimenter cette présentation.
 
 ### Auteurs
 
