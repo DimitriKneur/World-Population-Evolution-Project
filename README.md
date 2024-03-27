@@ -4,7 +4,7 @@
 
 Projet final de la formation Data analyst à [JEDHA BOOTCAMP](https://www.jedha.co/formations/data-analysis-fullstack)
 
-Présentation PPT : Vous pouvez accéder à la présentation [Le lien](https://www.canva.com/design/DAGAp643_7U/81JnTZ1dDN2NLBIFqvu_mQ/edit?utm_content=DAGAp643_7U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+Présentation PPT : Vous pouvez accéder à la présentation [via ce lien](https://www.canva.com/design/DAGAp643_7U/81JnTZ1dDN2NLBIFqvu_mQ/edit?utm_content=DAGAp643_7U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Titre du Projet
 
@@ -84,11 +84,39 @@ Le tableau de bord propose des graphiques spécifiques mettant en évidence le l
 En plus des analyses des données, le tableau de bord inclut des graphiques interactifs visant à fournir des recommandations basées sur les tendances observées. Ces recommandations peuvent aider à orienter les prises de décision et les actions futures.
 
 
-### Comment Exécuter le Code
+### Comment comprendre le Code
 
-Après toutes les étapes de cleaning et de traitement, les 2 fichiers de données que nous avons utilisé pour faire nos visualisations dans Power BI sont [217_countries_population.csv](lien) et [df_post_cleaning_4_force.csv](lien). Ils ont été obtenus respectivement à l'issue de l'exécution des 2 scripts [217_countries_population.ipynb](lien) et [merged_dataset_cleaning.ipynb](lien) .
+Après toutes les étapes de cleaning et de traitement, les 2 fichiers de données que nous avons utilisé pour faire nos visualisations dans Power BI sont [217_countries_population.csv](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/217_countries_population.csv) et [df_post_cleaning_4_force.csv](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/df_post_cleaning_4_force.csv). Ils ont été obtenus respectivement à l'issue de l'exécution des 2 scripts [217_countries_population.ipynb](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/217_countries_population.ipynb) et [merged_dataset_cleaning.ipynb](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/merged_dataset_cleaning.ipynb).
 
 En effet, dans notre travail de groupe, nous avons rencontré une situation où nous disposions de deux jeux de données distincts, présentant certains chevauchements de colonnes, mais chacun couvrant un nombre différent de pays. Le premier jeu de données offrait des informations complètes sur 217 pays, mais avec un ensemble de colonnes moins étendu. En revanche, le deuxième jeu de données fournissait des données exhaustives sur seulement 157 pays, mais avec une variété de colonnes plus large. Cette configuration découle du fait que chaque membre du groupe étudiait parallèlement différents aspects des jeux de données, ce qui nous a amenés à adopter une approche d'alternance entre les jeux de données pour répondre aux besoins spécifiques de nos analyses. Bien que cette méthode ne soit pas optimale, elle nous a permis de tirer le meilleur parti des données disponibles malgré les contraintes.
+
+Dans le détail, voici comment nous sommes arrivés à nos 2 fichiers finaux :
+
+
+#### Etape 1 - Récupération des données des différentes sources et transformation de ces sources de données du wide format à un long format, dossier [1_Create_and_unpivot_datasets](https://github.com/DimitriKneur/World-Population-Evolution-Project/tree/main/1_Create_and_unpivot_datasets)
+
+La plupart des fichiers ipynb correspondent à des fichiers de traitement (le nom de ces fichiers ipynb commence par "Prepare dataset") d'une ou plusieurs sources de données de 217 pays au mieux, sous format csv, de leur lecture grâce à pandas, jusqu'à l'export de chacune de ces sources données unpivotées dans de nouveaux fichiers csv séparés (le nom de ces nouveaux fichiers cvs commence par "Dataset"). Les autres fichiers ipynb sont des fichiers de lecture de ces sources de données pour de l'exploration préliminaire.
+
+
+#### Etape 2 - Merge de toutes les sources de données unpivotées, dossier [2_Merge_datasets](https://github.com/DimitriKneur/World-Population-Evolution-Project/tree/main/2_Merge_datasets)
+
+Dans le fichier [Merge_datasets.ipynb](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/2_Merge_datasets/Merge_datasets.ipynb), on importe tous les datasets créés, puis on les merge ensemble. On exporte ensuite le dataset mergé, contenant les informations de 157 pays (contre 217 dans certaines des sources de données initiales), dans un fichier nommé [joined_merged_final_dataset.csv](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/2_Merge_datasets/joined_merged_final_dataset.csv).
+
+
+#### Etape 3 - Cleaning du dataset, dossier [3_Data_cleaning_on_merged_dataset](https://github.com/DimitriKneur/World-Population-Evolution-Project/tree/main/3_Data_cleaning_on_merged_dataset)
+
+Le cleaning a été nécessaire sur 2 colonnes : le GDP et le female employment rate. Nous avons créé 2 fichiers de cleaning séparés, [Cleaning_GDP.ipynb](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/Cleaning_GDP.ipynb) et [female_employment_clean.ipynb](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/female_employment_clean.ipynb) pour effectuer le cleaning de ces 2 indicateurs, puis exporter les données cleanées de ces indicateurs respectivement dans les fichiers [df_GDP_cleaned.csv](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/df_GDP_cleaned.csv) et [female_employment_clean.csv](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/female_employment_clean.csv). 
+
+Puis, dans le fichier [merged_dataset_cleaning.ipynb](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/merged_dataset_cleaning.ipynb), nous avons modifié les valeurs des colonnes correspondant à ces deux indicateurs pour les remplacer par les données cleanées des deux fichiers csv précédemment créés. L'aboutissement de tout ce process nous a permis d'obtenir le fichier [df_post_cleaning_4_force.csv](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/df_post_cleaning_4_force.csv).
+
+En parallèle, nous nous sommes rendus compte que nous avions perdu les données démographiques de certains pays à cause des merges successifs entre les différentes sources de données lors de l'étape 2. Nous avons donc voulu rerécupérer ces données démographiques. Nous avons donc créé le fichier ipynb [217_countries_population.ipynb](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/217_countries_population.ipynb) dans ce but, afin d'avoir les données démographiques les plus exhaustives possibles pour certains indicateurs uniquement: il s'agit du taux de natalité, du taux de mortalité, population totale, population de 65 ans et plus, espérance de vie et taux de croissance de la population.
+
+Nous nous donc retrouvés avec deux fichiers de données finaux, [217_countries_population.csv](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/217_countries_population.csv) et [df_post_cleaning_4_force.csv](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/df_post_cleaning_4_force.csv), le premier fichier étant plus exhaustif pour les indicateurs précédemment cités, et le second ayant tous les autres indicateurs pour compléter notre analyse. Ainsi, pour faire les visualisations, nous avons alterné entre ces 2 fichiers selon les données que nous souhaitions modéliser.
+
+
+#### Etape 4 - Visualisation des données sur Power BI, dossier [4_Data_Viz](https://github.com/DimitriKneur/World-Population-Evolution-Project/tree/main/4_Data_Viz)
+
+Dans ce sous-dossier figure
 
 ### Auteurs
 
