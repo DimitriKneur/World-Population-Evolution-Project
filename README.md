@@ -121,7 +121,7 @@ Dans ce sous-dossier figure un fichier pbix (Power BI) [Visualizations_for_final
 
 #### Présentation finale
 
-Nous avons créé une [présentation](https://www.canva.com/design/DAGAp643_7U/81JnTZ1dDN2NLBIFqvu_mQ/edit?utm_content=DAGAp643_7U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) pour synthétiser tout le travail effectué. Dans le dossier [Presentation](https://github.com/DimitriKneur/World-Population-Evolution-Project/tree/main/Presentation), il y a des images, des icônes et différents contenus multimédia que nous avons utilisés pour alimenter cette présentation.
+Nous avons créé une [présentation](https://www.canva.com/design/DAGAp643_7U/81JnTZ1dDN2NLBIFqvu_mQ/edit?utm_content=DAGAp643_7U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) pour synthétiser tout le travail effectué. Vous trouverez [une version MP4 de cette présentation](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/Presentation/Data%20Analysis%20Fullstack%20Certification%20Project%20-%20Prepare%20the%20World%20of%20Tomorrow.mp4) à la racine du dossier [Presentation](https://github.com/DimitriKneur/World-Population-Evolution-Project/tree/main/Presentation). Dans le sous-dossier [Elements](https://github.com/DimitriKneur/World-Population-Evolution-Project/tree/main/Presentation/Elements), il y a des images, des icônes et différents contenus multimédia que nous avons utilisés pour alimenter cette présentation.
 
 ### Auteurs
 
