@@ -1,18 +1,30 @@
 # World Population Evolution Project
 
-# Projet Final
+<br>
+
+<p align="center">
+<img width="594px" src='https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/Presentation/World_Population_Evolution_Snapshot.gif' />
+</p>
+
+<br>
 
 Projet final de la formation Data analyst à [JEDHA BOOTCAMP](https://www.jedha.co/formations/data-analysis-fullstack).
 
 Présentation (canva) : Vous pouvez accéder à la présentation [via ce lien](https://www.canva.com/design/DAGAp643_7U/81JnTZ1dDN2NLBIFqvu_mQ/edit?utm_content=DAGAp643_7U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
 
+<br>
+
 ## Titre du Projet
 
 Préparer le monde de demain avec les tendences démographiques d'aujourd'hui.
 
+<br>
+
 ### Introduction
 
 Ce projet examine l'évolution démographique mondiale de 2000 à 2021, en mettant l'accent sur les variations des taux de natalité et de mortalité. L'importance de ces données réside dans leur capacité à éclairer les tendances sociétales et à guider la planification à long terme. L'objectif de l'analyse approfondie est d'identifier les facteurs clés sous-jacents à ces changements, fournissant ainsi des perspectives utiles pour les décideurs et les acteurs de la santé publique. En anticipant les défis liés à une population en mutation, l'étude vise à contribuer à des décisions stratégiques éclairées, favorisant un avenir plus équitable et durable sur le plan social, économique et environnemental.
+
+<br>
 
 ### Données Utilisées
 
@@ -32,7 +44,6 @@ Le tableau ci-dessous montre la significationde chaque colonne de notre dataset:
 |     Population_total                          |     La   population totale est basée sur la définition de facto de la population, qui   compte tous les résidents indépendamment de leur statut juridique ou de leur   citoyenneté. Les valeurs indiquées sont des estimations en milieu d'année.                                                                                                                                                                               |
 |     Median_age                                |     Correspond à   l'âge qui divise une population en deux groupes numériquement égaux,   c'est-à-dire que la moitié des personnes sont plus jeunes que cet âge et   l'autre moitié plus âgées. Il s'agit d'un indice unique qui résume la   répartition par âge d'une population.                                                                                                                                              |
 |     Human   Development Index                 |     L'indice de   développement humain (IDH) est une mesure synthétique des dimensions clés du   développement humain : une vie longue et saine, une bonne éducation et un   niveau de vie décent. Des valeurs plus élevées indiquent un développement   humain plus important.                                                                                                                                                 |
-|                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |     PM2.5_pollution                           |     Représente   le niveau moyen d'exposition de la population d'un pays aux particules en   suspension d'un diamètre aérodynamique inférieur à 2,5 microns. Ces   particules, capables de pénétrer profondément dans les voies respiratoires,   peuvent causer des dommages importants à la santé.                                                                                                                             |
 |     Urban   population rate                   |     La   population urbaine se réfère aux personnes vivant dans les zones urbaines   telles que définies par les bureaux nationaux de statistiques. Les données   sont collectées et lissées par la Division de la population des Nations   unies.                                                                                                                                                                              |
 |     Death_Rate                                |     Le taux de mortalité est le rapport entre le nombre annuel de décès et la   population totale moyenne sur une période et dans un territoire donné. Cette   mesure statistique est notamment utilisée en démographie humaine,                                                                                                                                                                                                |
@@ -50,10 +61,19 @@ Le tableau ci-dessous montre la significationde chaque colonne de notre dataset:
 |     GDP per   Capita                          |     Le PIB par   habitant est le produit intérieur brut divisé par la population en milieu   d'année. Le PIB est la somme de la valeur brute ajoutée par tous les   producteurs résidents de l'économie, augmentée des taxes sur les produits et   diminuée des subventions non incluses dans la valeur des produits.                                                                                                           |
 |     female_population_rate_15to44             |     Population   féminine âgée de 15 à 44 ans en pourcentage de la population féminine totale.                                                                                                                                                                                                                                                                                                                                  |
 |     Continent   Name                          |     Spécifie le   continent auquel chaque pays appartient. Elle permet de regrouper les données   par continent, facilitant ainsi des analyses régionales.                                                                                                                                                                                                                                                                      |
+<br>
 
-### Méthodologie
+### Méthodologie & Outils utilisés
+
+| Etape | Outils utilisés |
+|-------|-----------------|
+| Data Cleaning & EDA | <img style="padding:2px" src="https://img.shields.io/badge/python-3776AB.svg?style=for-the-badge&logo=python&logoColor=black"/> <img style="padding:2px" src="https://img.shields.io/badge/pandas-150458.svg?style=for-the-badge&logo=pandas&logoColor=black"/> |
+| Feature Importance Determination | <img style="padding:2px" src="https://img.shields.io/badge/dataiku-2AB1AC.svg?style=for-the-badge&logo=dataiku&logoColor=black"/> |
+| Visualizations | <img style="padding:2px" src="https://img.shields.io/badge/Power%20BI-F2C811.svg?style=for-the-badge&logo=powerbi&logoColor=black"/> |
 
 Les ensembles de données de la World Bank ont été importés dans Python via Pandas, puis traités individuellement pour uniformiser le format en vue d'une fusion. Le processus de fusion a créé une base de données complète pour notre analyse. Nous avons nettoyé la base en supprimant les colonnes superflues, remplaçant les valeurs manquantes par des données provenant d'Internet avec Pandas, et optimisé les types de données pour assurer une précision maximale. Cette approche méthodique garantit la qualité et la cohérence de notre ensemble de données final, formant une base solide pour une analyse approfondie de l'évolution de la population mondiale de 2000 à 2021.
+
+<br>
 
 ### Analyse et Modélisation avec Dataiku
 
@@ -61,9 +81,13 @@ Pour approfondir notre compréhension des données, nous avons utilisé la plate
 
 ![Alt text](https://github.com/DimitriKneur/Demoday/blob/main/Presentation/dataiku_flow.png)
 
+<br>
+
 ### Visualisations PowerBI
 
 Un tableau de bord interactif construit dans PowerBI, visant à visualiser et analyser l'évolution de la population mondiale au fil des années, avec un focus particulier sur les données par continent. Le tableau de bord est conçu pour offrir une compréhension approfondie des tendances démographiques en relation avec différents indicateurs. [Visualizations_for_final_presentation.pbix](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/4_Data_Viz/Visualizations_for_final_presentation.pbix)
+
+<br>
 
 ### Contenu du Tableau de Bord
 
@@ -71,20 +95,29 @@ Un tableau de bord interactif construit dans PowerBI, visant à visualiser et an
 
 La première page du tableau de bord présente une vue d'ensemble de l'évolution de la population mondiale au cours des années. Des graphiques temporels clairs permettent de suivre les variations démographiques et de repérer les tendances significatives.
 
+<br>
+
 ### 2. Répartition de la Population par Continent
 
 Les pages suivantes fournissent des analyses détaillées par continent, permettant aux utilisateurs d'explorer les différences et similitudes dans l'évolution démographique. Des filtres interactifs facilitent la sélection de plages temporelles spécifiques.
+
+<br>
 
 ### 3. Analyse du Taux de Natalité et de Mortalité
 
 Le tableau de bord propose des graphiques spécifiques mettant en évidence le lien entre le taux de natalité et de mortalité, en corrélation avec divers indicateurs. Ces visualisations permettent une compréhension approfondie des facteurs qui influent sur la dynamique démographique.
 
+<br>
+
 ### 4. Recommandations et Insights
 
 En plus des analyses des données, le tableau de bord inclut des graphiques interactifs visant à fournir des recommandations basées sur les tendances observées. Ces recommandations peuvent aider à orienter les prises de décision et les actions futures.
 
+<br>
 
 ### Comment Comprendre le Code et les Répertoires
+
+<br>
 
 Après toutes les étapes de cleaning et de traitement, les 2 fichiers de données que nous avons utilisé pour faire nos visualisations dans Power BI sont [217_countries_population.csv](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/217_countries_population.csv) et [df_post_cleaning_4_force.csv](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/df_post_cleaning_4_force.csv). Ils ont été obtenus respectivement à l'issue de l'exécution des 2 scripts [217_countries_population.ipynb](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/217_countries_population.ipynb) et [merged_dataset_cleaning.ipynb](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/merged_dataset_cleaning.ipynb).
 
@@ -92,16 +125,19 @@ En effet, dans notre travail de groupe, nous avons rencontré une situation où 
 
 Dans le détail, voici comment nous sommes arrivés à nos 2 fichiers finaux :
 
+<br>
 
 #### Etape 1 - Récupération des données des différentes sources et transformation de ces sources de données du wide format à un long format, dossier [1_Create_and_unpivot_datasets](https://github.com/DimitriKneur/World-Population-Evolution-Project/tree/main/1_Create_and_unpivot_datasets)
 
 La plupart des fichiers ipynb correspondent à des fichiers de traitement (le nom de ces fichiers ipynb commence par "Prepare dataset") d'une ou plusieurs sources de données de 217 pays au mieux, sous format csv, de leur lecture grâce à pandas, jusqu'à l'export de chacune de ces sources données unpivotées dans de nouveaux fichiers csv séparés (le nom de ces nouveaux fichiers cvs commence par "Dataset"). Les autres fichiers ipynb sont des fichiers de lecture de ces sources de données pour de l'exploration préliminaire.
 
+<br>
 
 #### Etape 2 - Merge de toutes les sources de données unpivotées, dossier [2_Merge_datasets](https://github.com/DimitriKneur/World-Population-Evolution-Project/tree/main/2_Merge_datasets)
 
 Dans le fichier [Merge_datasets.ipynb](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/2_Merge_datasets/Merge_datasets.ipynb), on importe tous les datasets créés, puis on les merge ensemble. On exporte ensuite le dataset mergé, contenant les informations de 157 pays (contre 217 dans certaines des sources de données initiales), dans un fichier nommé [joined_merged_final_dataset.csv](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/2_Merge_datasets/joined_merged_final_dataset.csv).
 
+<br>
 
 #### Etape 3 - Cleaning du dataset, dossier [3_Data_cleaning_on_merged_dataset](https://github.com/DimitriKneur/World-Population-Evolution-Project/tree/main/3_Data_cleaning_on_merged_dataset)
 
@@ -113,19 +149,23 @@ En parallèle, nous nous sommes rendus compte que nous avions perdu les données
 
 Nous nous donc retrouvés avec deux fichiers de données finaux, [217_countries_population.csv](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/217_countries_population.csv) et [df_post_cleaning_4_force.csv](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/3_Data_cleaning_on_merged_dataset/df_post_cleaning_4_force.csv), le premier fichier étant plus exhaustif pour les indicateurs précédemment cités, et le second ayant tous les autres indicateurs pour compléter notre analyse. Ainsi, pour faire les visualisations, nous avons alterné entre ces 2 fichiers selon les données que nous souhaitions modéliser.
 
+<br>
 
 #### Etape 4 - Visualisation des données sur Power BI, dossier [4_Data_Viz](https://github.com/DimitriKneur/World-Population-Evolution-Project/tree/main/4_Data_Viz)
 
 Dans ce sous-dossier figure un fichier pbix (Power BI) [Visualizations_for_final_presentation.pbix](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/4_Data_Viz/Visualizations_for_final_presentation.pbix) dans lequel figurent de nombreuses visualisations faites en exploitant les 2 fichiers finaux.
 
+<br>
 
 #### Présentation finale
 
 Nous avons créé une [présentation](https://www.canva.com/design/DAGAp643_7U/81JnTZ1dDN2NLBIFqvu_mQ/edit?utm_content=DAGAp643_7U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) pour synthétiser tout le travail effectué. Vous trouverez [une version MP4 de cette présentation](https://github.com/DimitriKneur/World-Population-Evolution-Project/blob/main/Presentation/Data%20Analysis%20Fullstack%20Certification%20Project%20-%20Prepare%20the%20World%20of%20Tomorrow.mp4) à la racine du dossier [Presentation](https://github.com/DimitriKneur/World-Population-Evolution-Project/tree/main/Presentation). Dans le sous-dossier [Elements](https://github.com/DimitriKneur/World-Population-Evolution-Project/tree/main/Presentation/Elements), il y a des images, des icônes et différents contenus multimédia que nous avons utilisés pour alimenter cette présentation.
 
+<br>
+
 ### Auteurs
 
-*  Nabil LALLAOUI
-*  Célia-Sijing XU
-*  Dimitri KNEUR
-*  Nigel ZANNOU
+*  [Nabil LALLAOUI](https://github.com/Nabil-LALLAOUI)
+*  [Célia-Sijing XU](https://github.com/Celia-Siijing)
+*  [Dimitri KNEUR](https://github.com/DimitriKneur)
+*  [Nigel ZANNOU](https://github.com/Nigel95)
